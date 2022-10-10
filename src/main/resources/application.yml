@@ -1,0 +1,20 @@
+spring:
+    datasource:
+        driver-class-name: org.h2.Driver
+        username: sa
+        url: jdbc:h2:file:./db/mangodbUserSlogan
+        password: ''
+    h2:
+        console:
+            enabled: true
+    sql:
+        init:
+            mode: always
+    jpa:
+        defer-datasource-initialization: 'true'
+        hibernate:
+            ddl-auto: create
+
+    server:
+        error:
+            include-message: always
